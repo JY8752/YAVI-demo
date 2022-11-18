@@ -9,9 +9,9 @@ class Car(
 ) {
     companion object {
         val validator = ValidatorBuilder.of<Car>()
-            .constraint(Car::manufacturer, "manufacturer") { c -> c.notNull() }
-            .constraint(Car::licensePlate, "licensePlate") { c -> c.notNull().greaterThanOrEqual(2).lessThanOrEqual(14) }
-            .constraint(Car::seatCount, "seatCount") { c -> c.greaterThanOrEqual(2) }
+            .constraint(Car::manufacturer, "manufacturer") { it.notNull() }
+            .constraint(Car::licensePlate, "licensePlate") { it.notNull().greaterThanOrEqual(2).lessThanOrEqual(14) }
+            .constraint(Car::seatCount, "seatCount") { it.greaterThanOrEqual(2) }
             .build()
     }
 }
