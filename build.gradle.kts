@@ -25,6 +25,7 @@ dependencies {
     // kotest
     val kotest_version = "5.5.4"
     testImplementation("io.kotest:kotest-runner-junit5-jvm:$kotest_version")
+    testImplementation("io.kotest:kotest-framework-datatest:$kotest_version")
     testImplementation("io.kotest.extensions:kotest-extensions-spring:1.1.2")
 
     // yavi

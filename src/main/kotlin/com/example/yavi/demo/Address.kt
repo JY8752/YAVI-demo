@@ -1,6 +1,7 @@
 package com.example.yavi.demo
 
 import am.ik.yavi.builder.ValidatorBuilder
+import am.ik.yavi.builder.validator
 
 data class Country(val name: String)
 data class City(val name: String)
@@ -13,5 +14,10 @@ class Address(val country: Country, val city: City) {
             .nest(Address::country, "country", countryValidator)
             .nest(Address::city, "city", cityValidator)
             .build()
+
+        val validatorKt = validator<Address> {
+            Address::country nest countryValidator
+            Address::city nest cityValidator
+        }
     }
 }
