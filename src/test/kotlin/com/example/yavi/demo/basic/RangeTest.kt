@@ -1,5 +1,8 @@
-package com.example.yavi.demo
+package com.example.yavi.demo.basic
 
+import com.example.yavi.demo.basic.Range
+import com.example.yavi.demo.basic.rangeValidator
+import com.example.yavi.demo.basic.rangeValidator2
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.datatest.withData
 import io.kotest.matchers.shouldBe

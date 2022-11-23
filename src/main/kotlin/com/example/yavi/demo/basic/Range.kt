@@ -1,4 +1,4 @@
-package com.example.yavi.demo
+package com.example.yavi.demo.basic
 
 import am.ik.yavi.builder.ValidatorBuilder
 import am.ik.yavi.core.CustomConstraint

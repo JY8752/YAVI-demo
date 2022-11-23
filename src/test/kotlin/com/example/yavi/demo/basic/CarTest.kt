@@ -1,4 +1,4 @@
-package com.example.yavi.demo
+package com.example.yavi.demo.basic
 
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.shouldBe
